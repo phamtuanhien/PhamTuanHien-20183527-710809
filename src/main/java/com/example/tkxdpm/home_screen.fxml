@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tkxdpm.HomeScreen">
+   <children>
+      <Pane prefHeight="129.0" prefWidth="1614.0" style="-fx-background-color: #eed9d9; -fx-border-color: #f4787a;">
+         <children>
+            <Group layoutX="92.0" layoutY="16.0">
+               <children>
+                  <ImageView fitHeight="79.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/PngItem_2488288.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="4.0" layoutY="68.0" text="AIMS" textFill="#02a1f7">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="493.0" layoutY="42.0">
+               <children>
+                  <TextField layoutY="1.0" prefHeight="45.0" prefWidth="547.0" text="Phạm Tuấn Hiên - 20183527" />
+                  <Button layoutX="553.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="76.0" text="Search" />
+               </children>
+            </Group>
+            <Group layoutX="1438.0" layoutY="40.0">
+               <children>
+                  <ImageView fitHeight="93.0" fitWidth="48.0" layoutX="4.0" layoutY="13.9951171875" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/263142.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#02a1f7" strokeType="OUTSIDE" strokeWidth="0.0" text="0 media">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <GridPane layoutY="128.0" prefHeight="641.0" prefWidth="1614.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Downloads/12-chot_mrxz.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="271.0" layoutY="2.0" text="Book1">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="50.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="51.0" text="24" />
+                  <Label layoutX="259.0" layoutY="79.0" text="Avail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="338.0" layoutY="80.0" text="24" />
+                  <Spinner layoutX="248.0" layoutY="107.0" prefHeight="30.0" prefWidth="129.0" />
+                  <Button layoutX="248.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Add to Cart" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
