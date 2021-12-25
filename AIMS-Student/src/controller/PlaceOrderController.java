@@ -14,6 +14,9 @@ import entity.cart.CartMedia;
 import entity.invoice.Invoice;
 import entity.order.Order;
 import entity.order.OrderMedia;
+import utils.NewShippingFeeCalculator;
+import utils.NormalShippingFeeCalculator;
+import utils.ShippingFeeCalculator;
 
 /**
  * This class controls the flow of place order usecase in our AIMS project
@@ -26,6 +29,12 @@ public class PlaceOrderController extends BaseController{
      */
     private static final Logger LOGGER = utils.Utils.getLogger(PlaceOrderController.class.getName());
 
+    // Pham Tuan Hien - 20183527
+    private ShippingFeeCalculator shippingFeeCalculator;
+    public void setShippingFeeCalculator(ShippingFeeCalculator shippingFeeCalculator) {
+        this.shippingFeeCalculator = shippingFeeCalculator;
+    }
+
     /**
      * This method checks the avalibility of product when user click PlaceOrder button
      * @throws SQLException SQL Exception
@@ -33,6 +42,7 @@ public class PlaceOrderController extends BaseController{
     public void placeOrder() throws SQLException{
         Cart.getCart().checkAvailabilityOfProduct();
     }
+
 
     /**
      * This method creates the new Order based on the Cart
@@ -174,9 +184,6 @@ public class PlaceOrderController extends BaseController{
      * @return shippingFee
      */
     public int calculateShippingFee(Order order){
-        Random rand = new Random();
-        int fees = (int)( ( (rand.nextFloat()*10)/100 ) * order.getAmount() );
-        LOGGER.info("Order Amount: " + order.getAmount() + " -- Shipping Fees: " + fees);
-        return fees;
+        return shippingFeeCalculator.calculateShippingFee(order);
     }
 }

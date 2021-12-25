@@ -18,6 +18,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import utils.Configs;
+import utils.NewShippingFeeCalculator;
 import views.screen.BaseScreenHandler;
 import views.screen.invoice.InvoiceScreenHandler;
 import views.screen.popup.PopupScreen;
@@ -93,13 +94,13 @@ public class ShippingScreenHandler extends BaseScreenHandler implements Initiali
 		} catch (InvalidDeliveryInfoException e) {
 			throw new InvalidDeliveryInfoException(e.getMessage());
 		}
-	
-		// calculate shipping fees
-		int shippingFees = getBController().calculateShippingFee(order);
-		if (isRush.isSelected()) shippingFees = shippingFees + order.getlstOrderMedia().size()*10000;
-		order.setShippingFees(shippingFees);
+		// Pham Tuan Hien - 20183527
 		order.setDeliveryInfo(messages);
-		
+		// calculate shipping fees
+		getBController().setShippingFeeCalculator(new NewShippingFeeCalculator());
+		int shippingFees = getBController().calculateShippingFee(order);
+		order.setShippingFees(shippingFees);
+
 		// create invoice screen
 		Invoice invoice = getBController().createInvoice(order);
 		BaseScreenHandler InvoiceScreenHandler = new InvoiceScreenHandler(this.stage, Configs.INVOICE_SCREEN_PATH, invoice);
