@@ -1,8 +1,8 @@
 package entity.payment;
 
 import java.sql.Timestamp;
-
-public class CreditCard {
+// Pham Tuan Hien - 20183527
+public class CreditCard extends PaymentCard{
 	private String cardCode;
 	private String owner;
 	private int cvvCode;

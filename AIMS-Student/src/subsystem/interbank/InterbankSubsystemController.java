@@ -11,6 +11,7 @@ import common.exception.NotEnoughTransactionInfoException;
 import common.exception.SuspiciousTransactionException;
 import common.exception.UnrecognizedException;
 import entity.payment.CreditCard;
+import entity.payment.PaymentCard;
 import entity.payment.PaymentTransaction;
 import utils.Configs;
 import utils.MyMap;
@@ -25,7 +26,7 @@ public class InterbankSubsystemController {
 
 	private static InterbankBoundary interbankBoundary = new InterbankBoundary();
 
-	public PaymentTransaction refund(CreditCard card, int amount, String contents) {
+	public PaymentTransaction refund(PaymentCard card, int amount, String contents) {
 		return null;
 	}
 	
@@ -33,7 +34,7 @@ public class InterbankSubsystemController {
 		return ((MyMap) data).toJSON();
 	}
 
-	public PaymentTransaction payOrder(CreditCard card, int amount, String contents) {
+	public PaymentTransaction payOrder(PaymentCard card, int amount, String contents) {
 		Map<String, Object> transaction = new MyMap();
 
 		try {
